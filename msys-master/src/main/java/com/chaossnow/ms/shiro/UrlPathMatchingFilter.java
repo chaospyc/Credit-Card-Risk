@@ -1,6 +1,6 @@
 package com.chaossnow.ms.shiro;
 
-import com.chaossnow.ms.service.AdminPermissionService;
+import com.chaossnow.ms.shiro.service.AdminPermissionService;
 import com.chaossnow.ms.util.SpringContextUtils;
 
 

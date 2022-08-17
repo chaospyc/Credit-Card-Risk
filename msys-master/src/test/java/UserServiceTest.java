@@ -1,4 +1,4 @@
-import com.chaossnow.ms.service.UserService;
+import com.chaossnow.ms.shiro.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

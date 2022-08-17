@@ -1,4 +1,4 @@
-package com.chaossnow.ms.service;
+package com.chaossnow.ms.shiro.service;
 
 import com.chaossnow.ms.dto.RoleBean;
 import com.chaossnow.ms.dto.RolePermission;

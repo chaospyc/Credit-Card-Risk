@@ -5,10 +5,12 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class AdminUserRole {
+public class AdminUserRole implements Serializable {
 
   private long id;
   private long uid;

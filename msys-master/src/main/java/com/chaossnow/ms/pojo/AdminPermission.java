@@ -1,7 +1,9 @@
 package com.chaossnow.ms.pojo;
 
 
-public class AdminPermission {
+import java.io.Serializable;
+
+public class AdminPermission implements Serializable {
 
   private long id;
   private String name;

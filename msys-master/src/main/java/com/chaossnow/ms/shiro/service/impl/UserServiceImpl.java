@@ -1,12 +1,12 @@
-package com.chaossnow.ms.service.impl;
+package com.chaossnow.ms.shiro.service.impl;
 
 import com.chaossnow.ms.dao.UserDao;
 import com.chaossnow.ms.dto.UserDTO;
 import com.chaossnow.ms.pojo.AdminRole;
 import com.chaossnow.ms.pojo.User;
-import com.chaossnow.ms.service.AdminRoleService;
-import com.chaossnow.ms.service.AdminUserRoleService;
-import com.chaossnow.ms.service.UserService;
+import com.chaossnow.ms.shiro.service.AdminRoleService;
+import com.chaossnow.ms.shiro.service.AdminUserRoleService;
+import com.chaossnow.ms.shiro.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.crypto.SecureRandomNumberGenerator;
 import org.apache.shiro.crypto.hash.SimpleHash;

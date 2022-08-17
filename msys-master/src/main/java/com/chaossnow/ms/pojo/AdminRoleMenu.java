@@ -1,6 +1,8 @@
 package com.chaossnow.ms.pojo;
 
-public class AdminRoleMenu {
+import java.io.Serializable;
+
+public class AdminRoleMenu implements Serializable {
 
   private long id;
   private long rid;

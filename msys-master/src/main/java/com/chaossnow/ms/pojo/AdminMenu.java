@@ -1,7 +1,9 @@
 package com.chaossnow.ms.pojo;
 
 
-public class AdminMenu {
+import java.io.Serializable;
+
+public class AdminMenu implements Serializable {
 
   private long id;
   private String path;

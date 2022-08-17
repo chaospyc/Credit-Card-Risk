@@ -1,4 +1,4 @@
-package com.chaossnow.ms.service;
+package com.chaossnow.ms.shiro.service;
 
 import com.chaossnow.ms.pojo.AdminRole;
 import com.chaossnow.ms.pojo.AdminUserRole;

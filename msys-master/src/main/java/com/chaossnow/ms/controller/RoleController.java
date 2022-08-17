@@ -3,16 +3,14 @@ package com.chaossnow.ms.controller;
 
 import com.chaossnow.ms.dto.RoleBean;
 import com.chaossnow.ms.dto.RolePermission;
-import com.chaossnow.ms.pojo.AdminPermission;
 import com.chaossnow.ms.pojo.AdminRole;
 import com.chaossnow.ms.result.Result;
 import com.chaossnow.ms.result.ResultFactory;
-import com.chaossnow.ms.service.AdminPermissionService;
-import com.chaossnow.ms.service.AdminRoleService;
+import com.chaossnow.ms.shiro.service.AdminPermissionService;
+import com.chaossnow.ms.shiro.service.AdminRoleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;

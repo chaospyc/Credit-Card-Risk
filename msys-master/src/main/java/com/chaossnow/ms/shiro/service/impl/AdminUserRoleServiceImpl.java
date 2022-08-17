@@ -1,9 +1,9 @@
-package com.chaossnow.ms.service.impl;
+package com.chaossnow.ms.shiro.service.impl;
 
 import com.chaossnow.ms.dao.AdminUserRoleDao;
 import com.chaossnow.ms.pojo.AdminRole;
 import com.chaossnow.ms.pojo.AdminUserRole;
-import com.chaossnow.ms.service.AdminUserRoleService;
+import com.chaossnow.ms.shiro.service.AdminUserRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
