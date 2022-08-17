@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="msys-master:war">
+    <output-path>$PROJECT_DIR$/msys-master/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>msys-master</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="msys-master-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="msys-master:war exploded" />
+    </root>
+  </artifact>
+</component>

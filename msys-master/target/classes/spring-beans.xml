@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <context:component-scan base-package="com.chaossnow.ms">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+    <context:property-placeholder location="classpath:db.properties"/>
+
+    <!-- 配置Druid数据源 -->
+    <!--Druid在功能、性能、扩展性方面，都超过其他数据库连接池，-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <!-- url -->
+        <property name="url" value="${jdbc.url}"/>
+        <!-- 用户名 -->
+        <property name="username" value="${jdbc.username}"/>
+        <!-- 密码 -->
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+
+    <!-- 事务回滚 -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="*" rollback-for="Exception"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <aop:pointcut id="txPoint" expression="execution(* com.chaossnow.ms.service.impl..*(..))"/>
+        <aop:advisor advice-ref="txAdvice"  pointcut-ref="txPoint"></aop:advisor>
+    </aop:config>
+
+    <!-- 配置用于创建SqlSessionFactory的工厂bean ,可以直接在Spring的IOC中获取sqlSessionFactory对象-->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--设置MyBatis的核心配置文件的路 ，这个文件整合后就不需要了，因此后期删除（可以不设置）-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <!--配置数据源-->
+        <property name="dataSource" ref="dataSource"/>
+
+        <!--设置类型别名所对应的包，令 com.chaossonw.ssm.pojo的 别名为"typeAliasesPackage" -->
+        <property name="typeAliasesPackage" value="com.chaossnow.ms.pojo"/>
+
+        <property name="mapperLocations" value="classpath:/mappers/*.xml"/>
+    </bean>
+
+    <!-- DAO接口所在包名，Spring会自动查找其下的类并注入到Spring的容器中 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.chaossnow.ms.dao"/>
+        <!-- <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property> -->
+    </bean>
+
+</beans>
