@@ -1,7 +1,6 @@
 package com.chaossnow.ms.shiro.service.impl;
 
 import com.chaossnow.ms.dao.AdminPremissionDao;
-import com.chaossnow.ms.dao.URLDao;
 import com.chaossnow.ms.pojo.AdminPermission;
 import com.chaossnow.ms.pojo.AdminRole;
 import com.chaossnow.ms.shiro.service.AdminPermissionService;
@@ -34,8 +33,6 @@ public class AdminPermissionServiceImpl implements AdminPermissionService {
     @Autowired
     private AdminRolePermissionService adminRolePermissionService;
 
-    @Autowired
-    private URLDao urlDao;
 
     @Override
     public List<AdminPermission> listAllPermissions() {
