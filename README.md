@@ -12,12 +12,11 @@
 
 1. Windows 10环境
 2. IDEA / Shell 开发工具
-1. Java JDK 1.8 
+3. Java JDK 1.8 
 
-###### **安装步骤**
+###### **项目接口**
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+ [Swagger API](https://work.chaossnow.com/swagger-ui.html)
 
 ```sh
 git clone https://github.com/chaospyc/Credit-Card-Risk.git
