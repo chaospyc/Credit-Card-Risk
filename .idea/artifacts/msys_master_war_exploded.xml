@@ -52,17 +52,17 @@
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.28" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.11.4" />
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.9" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.2.2.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.2.2.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.2.2.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.2.2.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.2.2.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.2.2.RELEASE" />
-          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.2.2.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.2.2.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.2.2.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-test:4.2.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.18" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-test:5.3.18" />
           <element id="library" level="project" name="Maven: javax.validation:validation-api:2.0.1.Final" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.7" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:2.0.6" />

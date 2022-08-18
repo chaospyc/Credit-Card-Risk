@@ -1,5 +1,5 @@
-import com.chaossnow.ms.shiro.service.AdminPermissionService;
-import com.chaossnow.ms.shiro.service.AdminRoleService;
+import com.chaossnow.ms.service.AdminPermissionService;
+import com.chaossnow.ms.service.AdminRoleService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -3,7 +3,7 @@ package com.chaossnow.ms.controller;
 import com.chaossnow.ms.pojo.User;
 import com.chaossnow.ms.result.Result;
 import com.chaossnow.ms.result.ResultFactory;
-import com.chaossnow.ms.shiro.service.UserService;
+import com.chaossnow.ms.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.shiro.SecurityUtils;

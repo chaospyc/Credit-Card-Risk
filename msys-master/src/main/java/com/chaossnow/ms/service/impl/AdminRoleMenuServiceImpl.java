@@ -1,8 +1,8 @@
-package com.chaossnow.ms.shiro.service.impl;
+package com.chaossnow.ms.service.impl;
 
 import com.chaossnow.ms.dao.AdminRoleMenuDao;
 import com.chaossnow.ms.pojo.AdminRoleMenu;
-import com.chaossnow.ms.shiro.service.AdminRoleMenuService;
+import com.chaossnow.ms.service.AdminRoleMenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

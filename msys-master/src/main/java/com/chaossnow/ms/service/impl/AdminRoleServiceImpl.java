@@ -1,4 +1,4 @@
-package com.chaossnow.ms.shiro.service.impl;
+package com.chaossnow.ms.service.impl;
 
 import com.chaossnow.ms.dao.AdminRoleDao;
 import com.chaossnow.ms.dao.UserDao;
@@ -10,9 +10,9 @@ import com.chaossnow.ms.pojo.AdminRole;
 import com.chaossnow.ms.pojo.AdminUserRole;
 import com.chaossnow.ms.result.Result;
 import com.chaossnow.ms.result.ResultFactory;
-import com.chaossnow.ms.shiro.service.AdminRolePermissionService;
-import com.chaossnow.ms.shiro.service.AdminRoleService;
-import com.chaossnow.ms.shiro.service.AdminUserRoleService;
+import com.chaossnow.ms.service.AdminRolePermissionService;
+import com.chaossnow.ms.service.AdminRoleService;
+import com.chaossnow.ms.service.AdminUserRoleService;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

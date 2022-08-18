@@ -1,7 +1,7 @@
 import com.chaossnow.ms.controller.UserController;
 import com.chaossnow.ms.pojo.AdminUserRole;
-import com.chaossnow.ms.shiro.service.AdminRoleService;
-import com.chaossnow.ms.shiro.service.AdminUserRoleService;
+import com.chaossnow.ms.service.AdminRoleService;
+import com.chaossnow.ms.service.AdminUserRoleService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

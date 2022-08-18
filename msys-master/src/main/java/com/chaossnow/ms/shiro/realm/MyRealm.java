@@ -1,9 +1,9 @@
 package com.chaossnow.ms.shiro.realm;
 
 import com.chaossnow.ms.pojo.User;
-import com.chaossnow.ms.shiro.service.AdminPermissionService;
-import com.chaossnow.ms.shiro.service.AdminRoleService;
-import com.chaossnow.ms.shiro.service.UserService;
+import com.chaossnow.ms.service.AdminPermissionService;
+import com.chaossnow.ms.service.AdminRoleService;
+import com.chaossnow.ms.service.UserService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;

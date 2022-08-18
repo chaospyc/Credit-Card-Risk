@@ -1,11 +1,11 @@
-package com.chaossnow.ms.shiro.service.impl;
+package com.chaossnow.ms.service.impl;
 
 import com.chaossnow.ms.dao.AdminPremissionDao;
 import com.chaossnow.ms.pojo.AdminPermission;
 import com.chaossnow.ms.pojo.AdminRole;
-import com.chaossnow.ms.shiro.service.AdminPermissionService;
-import com.chaossnow.ms.shiro.service.AdminRolePermissionService;
-import com.chaossnow.ms.shiro.service.AdminRoleService;
+import com.chaossnow.ms.service.AdminPermissionService;
+import com.chaossnow.ms.service.AdminRolePermissionService;
+import com.chaossnow.ms.service.AdminRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
