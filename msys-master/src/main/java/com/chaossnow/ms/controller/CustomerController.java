@@ -17,18 +17,37 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin
-@Api("消费者管理")
+@Api("客户管理")
 public class CustomerController {
 
     @RequestMapping(value = "/api/customer/add",method = RequestMethod.POST)
     @ApiOperation(value = "增加客户",httpMethod = "POST")
     public Result addCustomer(@RequestBody User requestUser){
+
         return null;
     }
 
     @RequestMapping(value = "/api/customer/delete{id}",method = RequestMethod.POST)
     @ApiOperation(value = "客户注销",httpMethod = "POST")
     public Result deleteCustomer(@RequestBody User requestUser){
+        return null;
+    }
+
+    @RequestMapping(value = "/api/customer/setState",method = RequestMethod.POST)
+    @ApiOperation(value = "设置客户状态",httpMethod = "POST")
+    public  Result setState(){
+        return null;
+    }
+
+    @RequestMapping(value = "/api/customer/listCustomer")
+    @ApiOperation(value = "客户列表",httpMethod = "GET")
+    public Result listCustomer(){
+        return null;
+    }
+
+    @RequestMapping(value = "/api/customer/listRisk")
+    @ApiOperation(value = "查看风险等级",httpMethod = "GET")
+    public Result listRisk(){
         return null;
     }
 }

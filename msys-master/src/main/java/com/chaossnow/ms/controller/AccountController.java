@@ -46,5 +46,16 @@ public class AccountController {
         return null;
     }
 
+    @RequestMapping(value = "/api/account/sumLoadOfBank",method = RequestMethod.POST)
+    @ApiOperation(value = "查看二级支行信用卡总规模",httpMethod = "POST")
+    public Result sumLoadOfBank(){
+        return null;
+    }
+
+    @RequestMapping(value = "/api/account/riskPercent")
+    @ApiOperation(value = "查看全行各账户类型比例",httpMethod = "GET")
+    public Result riskPercent(){
+        return null;
+    }
 
 }
