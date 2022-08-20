@@ -87,8 +87,9 @@ public class LoginController {
                 return ResultFactory.buildSuccessResult("注册成功");
             case 2:
                 return ResultFactory.buildFailResult("用户已存在");
+            default:
+                return ResultFactory.buildFailResult("Error");
         }
-        return ResultFactory.buildFailResult("未知错误");
     }
 
 
@@ -99,7 +100,13 @@ public class LoginController {
     @RequestMapping(value = "/api/logout",method = RequestMethod.GET)
     @ApiOperation(value = "用户退出",httpMethod = "GET")
     public Result logout(){
-        return null;
+        try {
+            Subject subject = SecurityUtils.getSubject();
+            subject.logout();
+            return ResultFactory.buildSuccessResult("成功退出");
+        }catch(Exception e){
+            return ResultFactory.buildFailResult("Error");
+        }
     }
 
 
@@ -109,8 +116,8 @@ public class LoginController {
      */
     @RequestMapping(value = "/api/authentication",method = RequestMethod.GET)
     @ApiOperation(value = "身份认证",httpMethod = "GET")
-    public String authentication(){
-        return "身份认证成功";
+    public Result authentication(){
+        return ResultFactory.buildSuccessResult("身份认证成功");
     }
 
 }

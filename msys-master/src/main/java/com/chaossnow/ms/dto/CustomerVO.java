@@ -14,13 +14,23 @@ import java.io.Serializable;
 @Data
 public class CustomerVO implements Serializable {
 
-    private long id;
     private String name;
+
     private long sex;
+
     private String idCard;
+
     private java.sql.Timestamp dateBirth;
+
     private String address;
+
     private String phone;
-    private long marry;
-    private long maxDegree;
+
+    private long fixAsset;
+
+    private long deposit;
+
+    private long securities;
+
+    private long annualIncome;
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chaossnow.ms.dao.CustomerDao">
+    <!--namespace根据自己需要创建的的mapper的路径和名称填写-->
+    <resultMap id="customerResultMap" type="com.chaossnow.ms.pojo.Customer" >
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="sex" property="sex" jdbcType="VARCHAR" />
+        <result column="id_card" property="idCard" jdbcType="TINYINT" />
+        <result column="date_birth" property="dateBirth" jdbcType="TIMESTAMP" />
+        <result column="address" property="address" jdbcType="VARCHAR"/>
+        <result column="phone" property="phone" jdbcType="VARCHAR" />
+    </resultMap>
+
+
+    <sql id="customerAll">
+        `name`,id_card,sex,date_birth,address,phone
+    </sql>
+
+    <select id="deleteById">
+
+
+
+    </select>
+    <!-- 增加客户 -->
+    <select id="addCustomer">
+        INSERT INTO `customer`(`name`,sex,id_card,date_birth,address,phone)
+        VALUES (#{name},#{sex},#{idCard},#{dateBirth},#{address},#{phone});
+    </select>
+
+    <select id="getCustomerBylastId" resultType="Customer">
+        SELECT id,<include refid="customerAll" />
+        FROM customer WHERE id = (SELECT LAST_INSERT_ID());
+    </select>
+
+
+
+</mapper>

@@ -16,8 +16,6 @@ public class Customer implements Serializable {
   private java.sql.Timestamp dateBirth;
   private String address;
   private String phone;
-  private long marry;
-  private long maxDegree;
 
 
   public long getId() {
@@ -82,22 +80,5 @@ public class Customer implements Serializable {
     this.phone = phone;
   }
 
-
-  public long getMarry() {
-    return marry;
-  }
-
-  public void setMarry(long marry) {
-    this.marry = marry;
-  }
-
-
-  public long getMaxDegree() {
-    return maxDegree;
-  }
-
-  public void setMaxDegree(long maxDegree) {
-    this.maxDegree = maxDegree;
-  }
 
 }

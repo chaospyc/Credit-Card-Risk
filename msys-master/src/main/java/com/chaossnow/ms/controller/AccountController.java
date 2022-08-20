@@ -52,9 +52,15 @@ public class AccountController {
         return null;
     }
 
-    @RequestMapping(value = "/api/account/riskPercent")
+    @RequestMapping(value = "/api/account/riskPercent",method = RequestMethod.PUT)
     @ApiOperation(value = "查看全行各账户类型比例",httpMethod = "GET")
     public Result riskPercent(){
+        return null;
+    }
+
+    @RequestMapping(value = "/api/account/getAccount",method = RequestMethod.PUT)
+    @ApiOperation(value = "查看客户信息" ,httpMethod = "PUT")
+    public Result getAccount(){
         return null;
     }
 
